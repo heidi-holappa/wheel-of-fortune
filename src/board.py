@@ -1,5 +1,5 @@
-from player import Player
-from wheelAnimation import WheelAnimation
+from entities.player import Player
+from ui.wheelAnimation import WheelAnimation
 import math
 
 
