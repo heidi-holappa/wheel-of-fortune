@@ -1,7 +1,7 @@
 .git/
 */__pycache__
 venv/
-data/
+*/data/
 *cache*
 .env
 .env.test
