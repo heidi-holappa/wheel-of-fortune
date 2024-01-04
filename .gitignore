@@ -1,7 +1,8 @@
 .git/
 */__pycache__
 venv/
-*/data/
+*/data/gamedata.db
+*/data/*temp*
 *cache*
 .env
 .env.test
