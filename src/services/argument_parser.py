@@ -22,7 +22,8 @@ def init_argparser():
         '-l',
         '--launch',
         required=False,
-        help='Launch the game'
+        help='Launch the game',
+        action='store_true'
     )
 
     parser.add_argument(
