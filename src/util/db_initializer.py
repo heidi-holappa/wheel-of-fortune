@@ -1,4 +1,4 @@
-from database_connection import get_database_connection
+from util.database_connection import get_database_connection
 
 
 def drop_tables(connection):
@@ -10,7 +10,7 @@ def drop_tables(connection):
     cursor = connection.cursor()
 
     cursor.execute('''
-        DROP TABLE IF EXISTS PHRASE;
+        DROP TABLE IF EXISTS PHRASES;
     ''')
 
     cursor.execute('''
@@ -31,10 +31,11 @@ def create_tables(connection):
     cursor.execute('''
         CREATE TABLE PHRASES (
             id INTEGER PRIMARY KEY,
-            source TEXT,
+            author TEXT,
             phrase TEXT,
-            category INTEGER,
-            author TEXT
+            source TEXT,
+            category TEXT
+            
                 
         );
     ''')
